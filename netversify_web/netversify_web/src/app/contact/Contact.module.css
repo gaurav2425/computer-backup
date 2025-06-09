@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.contact_container {
+  /* padding: 2%; */
+}
+.heading_container_title {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 22px;
+}
+.heading_container_desc {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.container1txt1 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container1txt2 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container1input1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  outline: none;
+  border-bottom: "2px solid white";
+  border-top: none;
+  border-right: none;
+  background: none;
+  padding: 10px 10px 10px 10px;
+  border-left: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.container1input1::placeholder {
+  color: #b4adad;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.container1input2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  outline: none;
+  border-bottom: "2px solid white";
+  border-top: none;
+  border-right: none;
+  background: none;
+  padding: 10px 10px 10px 10px;
+  border-left: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.container1input2::placeholder {
+  color: #b4adad;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.container2 {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container2txt1 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container2input2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  outline: none;
+  border-bottom: "2px solid #fff";
+  border-top: none;
+  border-right: none;
+  background: none;
+  padding: 10px 10px 10px 10px;
+  border-left: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.container2input2::placeholder {
+  color: #b4adad;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.container3 {
+  flex-direction: column;
+  display: flex;
+  margin-top: 20px;
+  /* align-items: center; */
+  width: 30%;
+}
+
+.container3txt1 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container3input1 {
+  /* margin-left: 10px; */
+  margin-right: 10px;
+  font-size: 15px;
+  outline: none;
+  border-bottom: "2px solid white";
+  border-top: none;
+  border-right: none;
+  background: none;
+  padding: 10px 10px 10px 10px;
+  border-left: none;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  color: rgb(0, 0, 0);
+}
+
+.container3input1::-webkit-scrollbar {
+  display: none;
+}
+
+.button_container {
+  background: #ff3f3f;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+.container3input1::placeholder {
+  color: #b4adad;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.dropdownList {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  outline: none;
+  border-bottom: "2px solid white";
+  border-top: none;
+  border-right: none;
+  background: none;
+  padding: 10px 10px 10px 10px;
+  border-left: none;
+  color: #b4adad;
+}
+.dropdownList option {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.btn {
+  padding: 15px;
+  background-color: #ff3f3f;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}

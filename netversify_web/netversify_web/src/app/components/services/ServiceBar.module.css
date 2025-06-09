@@ -1,0 +1,39 @@
+.service_container {
+  width: "100%";
+}
+.header_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.title_txt {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.view_txt {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid #ff3f3f;
+}
+
+.header_left {
+  border: "1px solid #000";
+  width: "50%";
+}
+
+.header_right {
+  border: "1px solid #000";
+  width: "50%";
+}
+
+.card_container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}

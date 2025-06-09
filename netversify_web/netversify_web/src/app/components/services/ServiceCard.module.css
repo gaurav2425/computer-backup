@@ -1,0 +1,21 @@
+.service_container {
+  width: 300px;
+  border-top: 2px solid #ff3f3f;
+  margin-right: 30px;
+}
+.service_heading {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 500;
+}
+.service_desc {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.service_desc_container {
+  margin-top: 10px;
+}

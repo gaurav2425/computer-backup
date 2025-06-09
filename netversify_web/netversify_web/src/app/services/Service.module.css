@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.service_container {
+  background-color: "#F8F8EC";
+  width: "100%";
+  height: "100%";
+}
+
+.service_heading {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 56px;
+}

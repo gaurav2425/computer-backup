@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.text_container {
+  height: 100%;
+  background-color: #f8f8f0;
+  color: white;
+  width: "100%";
+  font-family: "Poppins", sans-serif;
+  /* justify-content: center; */
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.articles_page {
+  background-color: #f8f8f0;
+}
+
+.article_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5%;
+}
+
+.article_container_sub {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.btn_container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.btn_container_txt {
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.btn_container_txt:hover {
+  cursor: pointer;
+}
+.text1 {
+  margin-top: 5%;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+.text2 {
+  font-size: 70px;
+  font-weight: 500;
+  color: black;
+}
+
+.textp {
+  /* width: 800px; */
+  width: 70vw;
+  color: black;
+}
+
+.article_large_container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .text1 {
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    width: "100%";
+  }
+
+  .text2 {
+    font-size: 70px;
+    font-weight: 500;
+    color: black;
+    width: "100%";
+  }
+  .textp {
+    width: "80%";
+  }
+}

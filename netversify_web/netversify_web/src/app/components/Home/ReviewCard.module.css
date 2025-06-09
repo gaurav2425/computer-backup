@@ -1,0 +1,51 @@
+.card_txt {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 400;
+}
+.review_card {
+  width: 300px;
+  height: 350px;
+  background-color: #242223;
+  padding: 10px;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+}
+
+.rating_container {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.profile_container {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rebeccapurple;
+}
+
+.name_container {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.name_container {
+  flex-direction: row;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+.name_txt {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.star_icon {
+  color: #ffff00;
+}
