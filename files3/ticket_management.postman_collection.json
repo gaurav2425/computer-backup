@@ -1,0 +1,1746 @@
+{
+	"info": {
+		"_postman_id": "4be23eb9-8d27-4204-b7cf-cd25c2266794",
+		"name": "ticket_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11327285"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product_name\": \"Sample Product updated\",\r\n  \"product_icon\": \"https://example.com/icon.pngupdated\",\r\n  \"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://b8a5-115-246-209-62.ngrok-free.app/api/create-product",
+							"protocol": "https",
+							"host": [
+								"b8a5-115-246-209-62",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"create-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"product_name\": \"Sample Product updated\",\r\n  \"product_icon\": \"https://example.com/icon.pngupdated\",\r\n  \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://b8a5-115-246-209-62.ngrok-free.app/api/create-product",
+									"protocol": "https",
+									"host": [
+										"b8a5-115-246-209-62",
+										"ngrok-free",
+										"app"
+									],
+									"path": [
+										"api",
+										"create-product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 06:57:03 GMT"
+								},
+								{
+									"key": "Ngrok-Agent-Ips",
+									"value": "115.246.209.62"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"error\": \"\",\n    \"message\": \"Product created successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product_name\": \"Sample Product updated\",\r\n  \"product_icon\": \"https://example.com/icon.pngupdated\",\r\n  \"status\": \"active\",\r\n   \"product_id\": \"A001B2345C\"\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://b8a5-115-246-209-62.ngrok-free.app/api/update-product",
+							"protocol": "https",
+							"host": [
+								"b8a5-115-246-209-62",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"update-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"product_name\": \"Sample Product updated\",\r\n  \"product_icon\": \"https://example.com/icon.pngupdated\",\r\n  \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://b8a5-115-246-209-62.ngrok-free.app/api/create-product",
+									"protocol": "https",
+									"host": [
+										"b8a5-115-246-209-62",
+										"ngrok-free",
+										"app"
+									],
+									"path": [
+										"api",
+										"create-product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 06:57:03 GMT"
+								},
+								{
+									"key": "Ngrok-Agent-Ips",
+									"value": "115.246.209.62"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"error\": \"\",\n    \"message\": \"Product created successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "product list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://b8a5-115-246-209-62.ngrok-free.app/api/products",
+							"protocol": "https",
+							"host": [
+								"b8a5-115-246-209-62",
+								"ngrok-free",
+								"app"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://b8a5-115-246-209-62.ngrok-free.app/api/products",
+									"protocol": "https",
+									"host": [
+										"b8a5-115-246-209-62",
+										"ngrok-free",
+										"app"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "755"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 06:54:50 GMT"
+								},
+								{
+									"key": "Ngrok-Agent-Ips",
+									"value": "115.246.209.62"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"product_id\": \"B123C4567D\",\n            \"product_name\": \"NodeJS\",\n            \"product_icon\": \"nodejs_icon.png\",\n            \"status\": \"active\"\n        },\n        {\n            \"product_id\": \"C234D5678E\",\n            \"product_name\": \"VueJS\",\n            \"product_icon\": \"vuejs_icon.png\",\n            \"status\": \"active\"\n        },\n        {\n            \"product_id\": \"D345E6789F\",\n            \"product_name\": \"Angular\",\n            \"product_icon\": \"angular_icon.png\",\n            \"status\": \"active\"\n        },\n        {\n            \"product_id\": \"E456F7890G\",\n            \"product_name\": \"Golang\",\n            \"product_icon\": \"golang.png\",\n            \"status\": \"active\"\n        },\n        {\n            \"product_id\": \"0GD2W9ES5L\",\n            \"product_name\": \"Sample Product\",\n            \"product_icon\": \"https://example.com/icon.png\",\n            \"status\": \"active\"\n        },\n        {\n            \"product_id\": \"A001B2345C\",\n            \"product_name\": \"Sample Product updated\",\n            \"product_icon\": \"https://example.com/icon.pngupdated\",\n            \"status\": \"inactive\"\n        }\n    ],\n    \"error\": \"\",\n    \"message\": \"Product details fetched successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "onboarding",
+			"item": [
+				{
+					"name": "Check email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"gauravburande18@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/check-email",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"check-email"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "check email",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"gauravburande18@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/check-email",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"check-email"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 01:57:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd1bfd88308ef4-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"isExists\": false\n    },\n    \"error\": \"\",\n    \"message\": \"Success\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "sign in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"example1@email.com\",\r\n  \"password\": \"StrongPassword123!\"\r\n}\r\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/signin",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"signin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"example1@email.com\",\r\n  \"password\": \"StrongPassword123!\"\r\n}\r\n ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/signin",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"signin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:00:37 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd1fefdea0848f-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"error\": \"Invalid credentials\",\n    \"message\": \"Incorrect email or password\",\n    \"status\": 401\n}"
+						}
+					]
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"gauravb@email.com\",\r\n  \"name\": \"Gaurav\",\r\n  \"flag\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/signup",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "send otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"gauravb@email.com\",\r\n  \"name\": \"Gaurav\",\r\n  \"flag\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/signup",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:02:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd23084a448531-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"email\": \"gauravb@email.com\",\n        \"name\": \"Gaurav\",\n        \"otp\": \"277545\"\n    },\n    \"error\": \"\",\n    \"message\": \"OTP sent successfully\",\n    \"status\": 200\n}"
+						},
+						{
+							"name": "verify otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"gauravb@email.com\",\r\n  \"name\": \"Gaurav\",\r\n  \"flag\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/signup",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:02:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd23084a448531-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"email\": \"gauravb@email.com\",\n        \"name\": \"Gaurav\",\n        \"otp\": \"277545\"\n    },\n    \"error\": \"\",\n    \"message\": \"OTP sent successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "refer and invite",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userMail\":\"gauravburande18@gmail.com\",\r\n    \"UserRole\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/generate-invite",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"generate-invite"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "generate invite",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userMail\":\"gauravburande18@gmail.com\",\r\n    \"UserRole\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/generate-invite",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"generate-invite"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 01:55:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd17b33be085b4-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"link\": \"https://6584-115-246-209-62.ngrok-free.app?token=8t_bwxa8Icev3mKcH70I3P21aAatwQu5i8TJFa7dFrdidcnNsHA93KtkEhnNx-NVREvdCYE8JrhiupmkYMsiCob2\",\n    \"message\": \"Invite mail sent successfully.\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"encryptedDatas\":\"8t_bwxa8Icev3mKcH70I3P21aAatwQu5i8TJFa7dFrdidcnNsHA93KtkEhnNx-NVREvdCYE8JrhiupmkYMsiCob2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/verify-invite",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"verify-invite"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Verify invite",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"encryptedDatas\":\"8t_bwxa8Icev3mKcH70I3P21aAatwQu5i8TJFa7dFrdidcnNsHA93KtkEhnNx-NVREvdCYE8JrhiupmkYMsiCob2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/verify-invite",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"verify-invite"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 01:56:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd19c6dad285c5-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"userRole\": \"gauravburande18@gmail.com\"\n    },\n    \"isActive\": true,\n    \"status\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "user profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"c53a341f-3f78-46ce-9d18-51919e1cadc1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/user-profile",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"user-profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user-profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"c53a341f-3f78-46ce-9d18-51919e1cadc1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/user-profile",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"user-profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:08:42 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd2bc8bb6a85ee-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"email\": \"subrat@blockstack.tech\",\n        \"full_name\": \"Subrat Barik\",\n        \"phone\": \"\",\n        \"status\": \"active\",\n        \"user_id\": \"c53a341f-3f78-46ce-9d18-51919e1cadc1\",\n        \"user_role\": \"1\"\n    },\n    \"error\": \"\",\n    \"message\": \"Client profile fetched successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "my profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/profile",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"new_password\":\"hello\",\r\n\"old_password\":\"hello\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/update-password",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"update-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"new_password\":\"hello\",\r\n\"old_password\":\"hello\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/update-password",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"update-password"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:11:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd2fa43c208495-BOM"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"error\": \"No token provided\",\n    \"message\": \"Authorization token is required\",\n    \"status\": 401\n}"
+						}
+					]
+				},
+				{
+					"name": "forgot-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"email\": \"subrat@blockstack.tech\",\r\n   \"flag\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/forgot-password",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"forgot-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "forgot password send otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n   \"email\": \"subrat@blockstack.tech\",\r\n   \"flag\": 1\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://stdevapi.diamante.io/api/forgot-password",
+									"protocol": "https",
+									"host": [
+										"stdevapi",
+										"diamante",
+										"io"
+									],
+									"path": [
+										"api",
+										"forgot-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:13:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "permissions-policy",
+									"value": "camera=(), microphone=()"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "DENY"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "93bd32458d6a8513-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"otp\": \"428224\"\n    },\n    \"error\": \"\",\n    \"message\": \"OTP generated successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"email\": \"subrat@blockstack.tech\",\r\n   \"new_password\":\"hello\",\r\n   \"otp\":\"428224\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stdevapi.diamante.io/api/reset-password",
+							"protocol": "https",
+							"host": [
+								"stdevapi",
+								"diamante",
+								"io"
+							],
+							"path": [
+								"api",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ticket",
+			"item": [
+				{
+					"name": "Create ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "6f42010d-278d-4c4d-b11e-e10dachorac0",
+									"type": "text"
+								},
+								{
+									"key": "ticket_title",
+									"value": "Hello product",
+									"type": "text"
+								},
+								{
+									"key": "ticket_description",
+									"value": "Helo",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "c53a341f-3f78-46ce-9d18-51919e1cadc1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/create-ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-ticket"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create ticket",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product_id",
+											"value": "6f42010d-278d-4c4d-b11e-e10dachorac0",
+											"type": "text"
+										},
+										{
+											"key": "ticket_title",
+											"value": "Hello product",
+											"type": "text"
+										},
+										{
+											"key": "ticket_description",
+											"value": "Helo",
+											"type": "text"
+										},
+										{
+											"key": "created_by",
+											"value": "c53a341f-3f78-46ce-9d18-51919e1cadc1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/create-ticket",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"create-ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:26:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "camera=(), microphone=()"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"error\": \"\",\n    \"message\": \"Ticket created successfully\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "ticket details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/support-ticket/6f42919d-278d-4c4d-b11e-e10da4743ac0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"support-ticket",
+								"6f42919d-278d-4c4d-b11e-e10da4743ac0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ticket details",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/support-ticket/6f42919d-278d-4c4d-b11e-e10da4743ac0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"support-ticket",
+										"6f42919d-278d-4c4d-b11e-e10da4743ac0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 02:27:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "464"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; frame-ancestors 'self'; script-src 'self'; object-src 'none';"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "camera=(), microphone=()"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tk_id\": 100,\n    \"ticket_id\": \"6f42919d-278d-4c4d-b11e-e10da4743ac0\",\n    \"created_by\": \"6f42919d-278d-4c4d-b11e-e10da4743ac6\",\n    \"ticket_title\": \"Login Issue\",\n    \"ticket_description\": \"User cannot log in after update.\",\n    \"ticket_file_1\": \"\",\n    \"ticket_file_2\": \"\",\n    \"ticket_file_3\": \"\",\n    \"status\": \"reopened\",\n    \"priority\": \"low\",\n    \"created_date\": \"2025-05-03T14:22:35.00663Z\",\n    \"updated_date\": \"2025-05-06T00:00:00Z\",\n    \"is_delete\": true,\n    \"ref_email_id\": \"\",\n    \"product_id\": \"6f42010d-278d-4c4d-b11e-e10dachorac0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update ticket status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":\"c53a341f-3f78-46ce-9d18-51919e1cadc1\",\r\n    \"ticket_id\":\"6f42919d-278d-4c4d-b11e-e10da4743ac0\",\r\n    \"status\":\"closed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ticket_master_baseUrl}}/update-ticket-status",
+							"host": [
+								"{{ticket_master_baseUrl}}"
+							],
+							"path": [
+								"update-ticket-status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
