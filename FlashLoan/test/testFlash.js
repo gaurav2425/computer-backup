@@ -9,27 +9,19 @@ const {
 const provider = waffle.provider;
 
 describe("FlashLoan Contract", () => {
-  let FLASHLOAN,
-    BORROW_AMOUNT,
-    FUND_AMOUNT,
-    initialFundingHuman,
-    txArbitrage;
-
+  let FLASHLOAN, BORROW_AMOUNT, FUND_AMOUNT, initialFundingHuman, txArbitrage;
 
   const DECIMALS = 18;
 
-  const BUSD_WHALE = "0xf977814e90da44bfa03b6295a0616a897441acec";
-  const BUSD = "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56";
-  const CAKE = "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82";
-  const CROX = "0x2c094F5A7D1146BB93850f629501eB749f6Ed491";
+  const USDC_WHALE = "0xcffad3200574698b78f32232aa9d63eabd290703";
+  const USDC = "0x155ff1A85F440EE0A382eA949f24CE4E0b751c65";
+  const LINK = "0x1B8568FbB47708E9E9D31Ff303254f748805bF21";
 
-
-  const busdInstance = new ethers.Contract(BUSD, abi, provider);
+  const usdcInstance = new ethers.Contract(USDC, abi, provider);
 
   beforeEach(async () => {
-
     // Ensure that the WHALE has a balance
-    const whale_balance = await provider.getBalance(BUSD_WHALE);
+    const whale_balance = await provider.getBalance(USDC_WHALE);
     expect(whale_balance).not.equal("0");
 
     // Deploy smart contract
@@ -37,26 +29,26 @@ describe("FlashLoan Contract", () => {
     FLASHLOAN = await FlashLoan.deploy();
     await FLASHLOAN.deployed();
 
-    const borrowAmountHuman = "1";
+    const borrowAmountHuman = "1000000";
     BORROW_AMOUNT = ethers.utils.parseUnits(borrowAmountHuman, DECIMALS);
-
-    initialFundingHuman = "100";
+    initialFundingHuman = "1000";
+    // 9999716191601431014648;
+    // 9999549963551039333448
     FUND_AMOUNT = ethers.utils.parseUnits(initialFundingHuman, DECIMALS);
 
     // Fund our Contract - FOR TESTING ONLY
     await fundContract(
-      busdInstance,
-      BUSD_WHALE,
+      usdcInstance,
+      USDC_WHALE,
       FLASHLOAN.address,
-      initialFundingHuman
+      initialFundingHuman,
+      DECIMALS
     );
   });
 
   describe("Arbitrage Execution", () => {
     it("ensures the contract is funded", async () => {
-      const flashLoanBalance = await FLASHLOAN.getBalanceOfToken(
-        BUSD
-      );
+      const flashLoanBalance = await FLASHLOAN.getBalanceOfToken(USDC);
 
       const flashSwapBalanceHuman = ethers.utils.formatUnits(
         flashLoanBalance,
@@ -66,31 +58,21 @@ describe("FlashLoan Contract", () => {
     });
 
     it("executes the arbitrage", async () => {
-      txArbitrage = await FLASHLOAN.initateArbitrage(
-        BUSD,
-        BORROW_AMOUNT
-      );
+      txArbitrage = await FLASHLOAN.initiateArbitrage(USDC, BORROW_AMOUNT);
 
       assert(txArbitrage);
 
-      // Print balances
-      const contractBalanceBUSD = await FLASHLOAN.getBalanceOfToken(BUSD);
-      const formattedBalBUSD = Number(
-        ethers.utils.formatUnits(contractBalanceBUSD, DECIMALS)
+      const contractBalanceUSDC = await FLASHLOAN.getBalanceOfToken(USDC);
+      const formattedBalUSDC = Number(
+        ethers.utils.formatUnits(contractBalanceUSDC, DECIMALS)
       );
-      console.log("Balance of BUSD: " + formattedBalBUSD);
+      console.log("Balance of USDC: " + formattedBalUSDC);
 
-      const contractBalanceCROX = await FLASHLOAN.getBalanceOfToken(CROX);
-      const formattedBalCROX = Number(
-        ethers.utils.formatUnits(contractBalanceCROX, DECIMALS)
+      const contractBalanceLINK = await FLASHLOAN.getBalanceOfToken(LINK);
+      const formattedBalLINK = Number(
+        ethers.utils.formatUnits(contractBalanceLINK, DECIMALS)
       );
-      console.log("Balance of CROX: " + formattedBalCROX);
-
-      const contractBalanceCAKE = await FLASHLOAN.getBalanceOfToken(CAKE);
-      const formattedBalCAKE = Number(
-        ethers.utils.formatUnits(contractBalanceCAKE, DECIMALS)
-      );
-      console.log("Balance of CAKE: " + formattedBalCAKE);
+      console.log("Balance of LINK: " + formattedBalLINK);
     });
   });
 });
