@@ -1,0 +1,91 @@
+.social_icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+.github_icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.twitter_icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.email_icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.whatsapp_icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.instagram_icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.linkedin_icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .social_icons{
+        margin-top: 10px;
+      
+    }
+    
+.linkedin_icon{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.github_icon{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.twitter_icon{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.email_icon{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.whatsapp_icon{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.instagram_icon{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+
+}

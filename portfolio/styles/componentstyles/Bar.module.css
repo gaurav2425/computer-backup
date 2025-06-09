@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.bar_container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  /* background-color: aqua; */
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.project_img_container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.project_img {
+  width: 200px;
+  margin: 5px;
+}
+.project_img_container h1 {
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 10px;
+  color: black;
+}
+.texh_stack_txt {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+.project_img_container h1:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.bar_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bar_bottom {
+  width: 70vw;
+  margin-top: 25px;
+  /* display: none; */
+  animation: dropDownAnimation 2s ease;
+}
+
+@keyframes dropDownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bar_bottom p {
+  color: rgb(38, 37, 37);
+}
+
+.bar_top_title {
+  font-size: 25px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+.texh_stack_txt_skills {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.bar_top_duration {
+  font-size: 15px;
+  color: #410842;
+  margin-top: 10px;
+}
+
+.bar_top_tech_stack {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bar_top_tech_stack h1 {
+  font-size: 18px;
+}
+
+.bar_top_tech_stack p {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .bar_container {
+    width: 95vw;
+  }
+  .bar_top_title {
+    font-size: 15px;
+  }
+}

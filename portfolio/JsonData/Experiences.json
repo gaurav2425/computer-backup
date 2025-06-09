@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Block Stack - React Native Mobile Application Developer",
+    "duration": "Aug 2023- present",
+    "techstack": "REACT Native, Web3 ,Blockchain",
+    "desc": [
+      "Worked on Paycircle application by using this user can transfer crypto as well as Usd to each Other",
+      "Developed crypto wallet where user can import their assets for respective Blockchains",
+      "Integrated Trade Module in Paycircle application where users can buy and sell Different Cryptocurrencies"
+    ],
+    "summery": "I was an integral part of the development team working on the Paycircle application, a versatile platform enabling seamless transactions in both cryptocurrencies and traditional fiat currencies. Additionally, I played a key role in developing a sophisticated crypto wallet system. This innovative wallet allowed users to import and manage their diverse range of assets across various blockchain networks, ensuring a streamlined and secure process for asset management within the Paycircle ecosystem."
+  },
+  {
+    "title": "Abekus - FRONTEND REACT JS Developer",
+    "duration": "OCT 2021- AUG 2022",
+    "techstack": "REACT JS, FIGMA ,AWS",
+    "desc": [
+      "Delivered the feature of Forms for Learning Management System software. Integrated Frontend with Backend using Api's",
+      "Experienced Agile Software development with scrum for quick software release"
+    ]
+  },
+  {
+    "title": "CAMPUS INNOVATIONS - FRONTEND REACT JS INTERN",
+    "duration": "OCT 2021- AUG 2022",
+    "techstack": "REACT JS, FIGMA ,AWS",
+    "desc": [
+      "Delivered the feature of Forms for Learning Management System software. Integrated Frontend with Backend using Api's",
+      "Experienced Agile Software development with scrum for quick software release"
+    ]
+  },
+  {
+    "title": "Nyahari",
+    "duration": "OCT 2021- Dec 2022",
+    "techstack": "REACT JS, FIGMA ,AWS",
+    "desc": [
+      "Focused on Full Stack Development and delivered whole backend and Design of application",
+      "Configured and deployed the app on Cloud for scalability and cost effectiveness"
+    ]
+  }
+]

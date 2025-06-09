@@ -1,0 +1,108 @@
+.footer_container {
+  /* background:rgb(37, 1, 30); */
+  background-image: url("https://i.ibb.co/VSyWs0z/Rectangle-44-1.png");
+  /* width: 110vw; */
+  height: 400px;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  /* padding: 0px -80px 0px 0px; */
+  object-fit: cover;
+  /* object-position: 25% 25%; */
+
+  /* background-image: 
+  linear-gradient(0deg, rgba(198,83,165,.95) 0%, rgba(198,86,51,.95) 100%),
+  linear-gradient(90deg, transparent 50%, rgba(0,0,0,.95) 100%);
+opacity: 0.949; */
+  /* z-index: 111; */
+}
+.overlay {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(67, 67, 67, 0.7),
+    rgba(22, 22, 22, 0.9),
+    rgb(12, 12, 12),
+    black
+  );
+  /* opacity: 0.99; */
+  position: absolute;
+  /* bottom: 0px; */
+  right: 0px;
+  height: 400px;
+  z-index: 11111;
+  width: 80vw;
+}
+.footer_container_left h1 {
+  font-size: 80px;
+  width: 400px;
+}
+.footer_container_right h1 {
+  /* width: 400px; */
+  font-size: 25px;
+  /* margin-top: 10px; */
+  margin-top: 25px;
+  z-index: 111133333333333333;
+}
+
+.footer_container_right {
+  width: 600px;
+  z-index: 111133333333333333;
+}
+
+.connect_social {
+  font-size: 30px;
+}
+
+.social_icons {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: flex-start;
+    padding-left: 5%;
+    background: rgb(37, 1, 30);
+    background: rgb(31, 0, 24);
+  }
+  .footer_container_right p {
+    width: 85vw;
+  }
+  .footer_container_left h1 {
+    font-size: 50px;
+    width: 250px;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
+.email_icon:hover {
+  cursor: pointer;
+  top: -10px;
+  position: relative;
+}
+
+.instagram_icon:hover {
+  cursor: pointer;
+  top: -10px;
+  position: relative;
+}
+
+.twitter_icon:hover {
+  cursor: pointer;
+  /* color: rgb(29, 161, 242); */
+  top: -10px;
+  position: relative;
+}
+.linkedin_icon:hover {
+  cursor: pointer;
+  top: -10px;
+  position: relative;
+}
