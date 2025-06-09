@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.main {
+  background-color: #000000;
+  color: #333;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.heroSection {
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.image_strip {
+  margin-top: -200px;
+}
+.heading {
+  font-size: 78px;
+  width: 1200px;
+}
+
+.description {
+  font-size: 20px;
+  color: #dcdcdc;
+  width: 1200px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.createBtn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+.createBtn_arrow {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.createBtn:hover {
+  /* background-color: #a78c55;
+  color: white; */
+}
+
+.descriptionSection {
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionSection h2 {
+  font-size: 32px;
+}
+
+/* .info_description_section {
+  background-color: red;
+} */

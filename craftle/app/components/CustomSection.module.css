@@ -1,0 +1,43 @@
+/* styles/CustomSection.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.customSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-color: #000000; /* Dark background for contrast */
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.imageContainer {
+  /* flex: 1; */
+}
+
+.image {
+  width: 400px;
+  height: 300px; /* Set a max width for the image */
+  object-fit: cover;
+}
+
+.textContainer {
+  /* flex: 2; */
+  padding-left: 40px; /* Space between image and text */
+  /* background-color: aqua; */
+}
+
+.title {
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.6;
+  width: 700px;
+}

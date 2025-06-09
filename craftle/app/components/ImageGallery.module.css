@@ -1,0 +1,105 @@
+.testimonialContainer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #000000;
+}
+.profile_container {
+  width: 45px;
+  height: 45px;
+  background-color: gray;
+  border-radius: 50px;
+}
+.profile_container_header {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #61204e;
+}
+.cityCard {
+  background-color: rgb(0, 0, 0);
+  margin-right: 20px;
+  max-width: 400px;
+  width: 400px;
+  height: 250px;
+}
+.cityImage {
+  background-color: rgb(0, 0, 0);
+  margin-right: 20px;
+  max-width: 400px;
+  width: 400px;
+  height: 250px;
+}
+.cityName {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  margin-right: 100px;
+  color: rgb(255, 255, 255);
+}
+/* .marquee_strip {
+  margin-top: -200px;
+} */
+.card {
+  width: 300px;
+  padding: 20px;
+  height: 350px;
+  margin: 0 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  /* margin-left: 10px; */
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+}
+
+.rating {
+  color: #f4c150; /* Star color */
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.star {
+  margin-right: 3px;
+}
+
+.down_marquee {
+  margin-top: 20px;
+}
+
+.profile_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile_container_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
